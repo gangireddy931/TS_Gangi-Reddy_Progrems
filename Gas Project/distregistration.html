@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+	
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["DISTNAME"]["PASSWORD"]["EMAIL"]["PHONE.NO"].value;
+if (x == "") {
+alert("Name must be filled out");
+return false;
+alert("Password must be filled");
+return false;
+alert("Re-Password must be filled");
+return false;
+alert("Phone number must be filled");
+return false;
+alert("email must be filled");
+return false;
+}
+}
+</script>
+<style> 
+	body {
+	  background-image: url("C:\Users\gangi\Desktop\download (1).jpg");
+	  background-color: skyblue;
+	}
+
+.topnav
+{      
+ overflow:hidden;
+ background-color:darkseagreen;
+}
+.topnav a 
+{
+ float:left;
+ color:white;
+ text-align:center;
+ padding:14px;
+ text-decoration:none;
+ font-size:17px;
+}
+.topnav a:hover {
+background-color:yellow;
+}
+.topnav a.active {
+background-color:brown;
+color:yellow;
+}
+	</style>
+</head>
+
+	
+<script type="text/javascript">
+function Validate() {
+var password = document.getElementById("abc").value;
+var confirmPassword = document.getElementById("def").value;
+if (password != confirmPassword) {
+alert("Passwords do not match.");
+return false;
+}
+return true;
+}
+</script>
+<body>
+<h1><marquee style="background-color:red" scrollamount="15";>Welcome to Online Gas Booking </marquee></h1>
+
+
+<div class="topnav">
+<a class="active" href="homepage.html"><i class="fa fa-home">Home</i></a>
+  
+  
+  <a href="Contact.html">Contact</a>
+  <div class="topnav-right">
+    <a href="#search">Search</a>
+  
+ <div class="topnav-right">
+
+<a href="distlogin.html">Dis-LOGIN</a>
+<a href="distregistration.html">SIGNin</a>
+      </div>
+</div>
+</div>
+<h4 style="color:blue"><marquee  style="background-color:deepskyblue" direction="right" scrollamount="16">LPG Is Like Time....Once Gone Will Never Comeback </marquee></h4>
+<div class="container-fluid"align="right">
+<form name=F1 " action="DistRegisterServlet"  method="post">
+<table align="center" : cellspacing="5" cellpadding="2">
+<td>Dist Id:</td>
+<td><input type=distid  name="DId" placeholder="enter Dist id" required /></td>
+</tr>
+<tr>
+<td>Dist NAME:</td>
+<td><input type="text" name="dName" placeholder=" Enter your Name" required autofocus /></td>
+</tr>
+<tr>
+<td>PASSWORD:</td>
+<td ><input type="password" style="color:blie" name="dpassword" id="abc"
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+placeholder="enter password"  required /></td>
+</tr>
+<tr>
+<td>CONFIRMPASSWORD:</td>
+<td><input type="password" name="dCPassword" id="def" placeholder="enter password"
+required /></td>
+</tr>
+
+<tr>
+<td>ADDRESS:</td>
+<td><input type="text" name="dAddress"  placeholder="enter Address"  required /></td>
+
+</tr>
+<tr>
+<td>PHONE:</td>
+<td><input type="text" name="dPhone"placeholder="enter mobile num" maxlength="10"
+required="" /></td>
+</tr>
+<tr>
+<td>EMAIL:</td>
+<td><input type=email name="dEmail" placeholder="enter Email" required /></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="SUBMIT" value="SUBMIT" id="btnSubmit"
+value="Submit" onclick="return Validate()" /> <INPUT TYPE=RESET
+VALUE="CLEAR"></td>
+</tr>
+<h1 align="center">SIGNUP HERE</h1>
+</table>
+</form>
+
+</body>
+</html>

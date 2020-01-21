@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+<title>Insert title here</title>
+<style>
+body {
+	background-image: url("http://www.shutterstock.com/image-vector/cooking-gas-cylinder-1149025115.png");
+	background-size: 100%;
+	    background-repeat: no-repeat;
+	background-position: top;
+	background-color:yellow;
+}
+
+
+
+.topnav
+{      
+ overflow:hidden;
+ background-color:darkseagreen;
+}
+.topnav a 
+{
+ float:left;
+ color:white;
+ text-align:center;
+ padding:14px;
+ text-decoration:none;
+ font-size:17px;
+}
+.topnav a:hover {
+background-color:yellow;
+}
+.topnav a.active {
+background-color:brown;
+color:yellow;
+}
+</style>
+</head>
+<body>
+
+ <h1><marquee style="background-color:red" scrollamount="15";>Welcome to Online Gas Booking </marquee></h1>
+
+
+<div class="topnav">
+<form  onSubmit="return dil(this)" action="UserLoginServlet" method="Post">
+
+  
+<a class="active" href="homepage.html"><i class="fa fa-home">Home</i></a>
+ 
+  <a href="Contact.html">Contact</a>
+  <div class="topnav-right">
+    <a href="#search">Search</a>
+    <a href="#about">About</a>
+ <div class="topnav-right">
+<a href="BookingView.jsp">Booking View</a>
+
+<a href="registrationgas.html">SIGN IN</a>
+
+      </div>
+</div>
+</div>
+<h4 style="color:blue"><marquee  style="background-color:deepskyblue" direction="right" scrollamount="16">LPG Is Like Time....Once Gone Will Never Comeback </marquee></h4>
+<div class="container-fluid"align="right">
+	<form name=username  action="UserLoginServlet" method="post">
+		<center>
+			
+				<tr>
+					<th colspan=2>User Login</th>
+					<br>
+				</tr>
+				<br>
+				<tr>
+				<tr>
+					<td>User Name:</td>
+					<td><input type="text" maxlength="100" name="username" placeholder=" Enter your Name" required></td>
+				</tr>
+				</tr>
+				<br>
+				<tr>
+					<td>Password:</td>
+					<td><input type="Password" minlength="8" name="password" placeholder=" Enter password"required></td>
+				</tr>
+				
+					<tr>
+					<td><colspan=4><center style="align:left">
+							<input type="submit" value="Login">
+						<input type="reset"	valuee="Reset"><br></center>
+				
+						</td>
+					</tr>
+			</table>
+	</form>
+</body>
+</html>

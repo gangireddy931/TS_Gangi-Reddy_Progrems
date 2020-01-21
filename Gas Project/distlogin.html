@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+<title>Insert title here</title>
+<style>
+body {
+	background-image: url("http://www.shutterstock.com/image-vector/cooking-gas-cylinder-1149025115.png");
+	background-size: 100%;
+	    background-repeat: no-repeat;
+	background-position: top;
+}
+
+table {
+	background:greenyellow;
+}
+
+.topnav
+{      
+ overflow:hidden;
+ background-color:darkseagreen;
+}
+.topnav a 
+{
+ float:left;
+ color:white;
+ text-align:center;
+ padding:14px;
+ text-decoration:none;
+ font-size:17px;
+}
+.topnav a:hover {
+background-color:yellow;
+}
+.topnav a.active {
+background-color:brown;
+color:yellow;
+}
+</style>
+</head>
+<body>
+<h1><marquee style="background-color:red" scrollamount="15";>Welcome to Online Gas Booking </marquee></h1>
+
+
+<div class="topnav">
+<a class="active" href="BookingServlet"><i class="fa fa-home">Home</i></a>
+ 
+  <a href="Contact.html">Contact</a>
+  <div class="topnav-right">
+    <a href="#search">Search</a>
+ <div class="topnav-right">
+
+<a href="distlogin.html">Dis-LOGIN</a>
+<a href="distregistration.html">SIGNin</a>
+      </div>
+</div>
+</div>
+<h4 style="color:blue"><marquee  style="background-color:deepskyblue" direction="right" scrollamount="16">LPG Is Like Time....Once Gone Will Never Comeback </marquee></h4>
+<div class="container-fluid"align="right">
+	<form action="DistLoginSqlServlet" method="post">
+		<center>
+			<table style=width:"50%" height:"50%" border="1px">
+				<tr>
+					<th colspan=2>Distributor Login</th>
+					<br>
+				</tr>
+				<br>
+				<tr>
+				<tr>
+					<td>Dist Name:</td>
+					<td><input type="text" minlength="6" maxlength="100" name="distname" placeholder=" Enter your Name" required></td>
+				</tr>
+				</tr>
+				<br>
+				<tr>
+					<td>Password:</td>
+					<td><input type="Password" minlength="8" name="password" placeholder=" Enter password"required></td>
+				</tr>
+				
+					<tr>
+					<td><colspan=4><center style="align:left">
+							<input type="submit" value="Login">
+						<input type="reset"	valuee="Reset">
+										</center>	</td>
+					</tr>
+			</table>
+	</form>
+</body>
+</html>

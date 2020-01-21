@@ -1,0 +1,61 @@
+package Controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class DistLoginServlet
+ */
+@WebServlet("/DistLoginServlet")
+public class DistLoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public DistLoginServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		try {
+
+			PrintWriter out = response.getWriter();
+			String DistName = request.getParameter("distname");
+			String password = request.getParameter("password");
+			out.print("welcome" + DistName);
+		
+		Cookie ck = new Cookie("distname", DistName);// creating cookie object
+			response.addCookie(ck);// adding cookie in the response
+			// creating submit button
+			
+			out.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+		
+	}
+
+}
